@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_launcher_background"/>
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_below="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/resim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resim1"/>
+        <RadioButton
+            android:id="@+id/resim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resim2"/>
+        <RadioButton
+            android:id="@+id/resim3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resim3"/>
+        <RadioButton
+            android:id="@+id/resim4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resim4"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Değiştir"
+        android:layout_below="@id/rGroup"
+        android:id="@+id/btn"/>
+
+</RelativeLayout>
